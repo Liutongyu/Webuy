@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 ">
+                <a href="index.html" class="navbar-brand mr-5" class="webuylogo" style="font-weight:bold;color:#6e560f;font-family:'Times New Roman', Times, serif">
+                    <img style="width:100px; height:55px;" src="./img/icon/webuy_logo.png">
+                    weBuy!
+                </a>
+            </div>
+
+            <div class="col-lg-6">
+                <ul class="list-unstyled d-flex">
+                    <li class="mr-5">
+                        <a class="my_larger" style="text-decoration:none" onclick='window.open("necessaryForSchool.html")'>开学必备</a>
+                    </li>
+                    <li class="mr-5">
+                        <a class="my_larger" style="text-decoration:none" href="#">清凉居室</a>
+                    </li>
+                    <li class="mr-5">
+                        <a class="my_larger" style="text-decoration:none" href="#">星品驾到</a>
+                    </li>
+                    <li class="mr-5">
+                        <a class="my_larger" style="text-decoration:none" href="#">世界风物</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4  mt-2">
+                <div class="input-group">
+                    <a href="javascript:" class="icon-search"></a>
+                    <input type="text" onkeydown="keyQuery()" class="mysearch form-control p-0 pt-2 pb-2 pl-3 my_small"
+                        placeholder="请输入您要搜索的内容">
+                    <a href="shoppingCart.html" class="icon-cart ml-5"></a>
+                    <span class="m-cart-news"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+
+</html>

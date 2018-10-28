@@ -1,0 +1,28 @@
+.footer{
+    margin-top:90px;
+    border-top:1px solid #e7e7e7;
+    background-color:#fff;
+    color:#666;          /*footer里所有的字体颜色*/
+}
+
+.footer_container{
+    width:1300px;
+    margin:0 auto;
+}
+
+.footer_link{
+    color:#666;
+}
+
+.footer_link:hover{
+    color:orange;
+}
+
+img{
+    vertical-align:middle;
+    border:none;
+}
+
+.my_img{
+width:100px;
+}

@@ -1,0 +1,207 @@
+.good-name{
+    color: #333;
+}
+
+/*购物车*/
+.price_size{
+    font-size: 30px;
+    vertical-align: 0;
+}
+.service-item-text{
+    margin-left: 8px;
+    line-height: 30px;
+}
+.cart_bg{
+    margin-bottom: 26px;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height:200px;
+}
+.size-container{
+    margin-bottom: -14px;
+    float: left;
+    width: 473px;
+    overflow: hidden;
+}
+.tag-item-onSaled{
+    /* border: 1px solid #845f3f; */
+    border: 1px solid gainsboro;
+    margin-right: 14px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px 20px;
+    color: #845f3f;
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    cursor:pointer;
+}
+.cart-text-left{
+    line-height:32px;
+    margin-right: 10px;
+}
+.cart-count{
+    line-height:80px;
+    margin-right:33px;
+}
+/*立即购买*/
+#tobuy{
+    color:#845f3f;
+    background:none;
+    border:1px solid #845f3f;
+}
+#tobuy:hover{
+    background-color: #845f3f;
+    color:white;
+}
+/*加入购物车*/
+.add-to-cart{
+    color:white;
+    background: #845f3f;
+    border-color: #845f3f;
+}
+.add-to-cart:hover{
+    background:darkred;
+    color:white;
+}
+/*立即购买和加入购物车字体和butoon大小设置*/
+.m-btn-middle {
+    min-width: 167px;
+    height: 52px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.m-btns {
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 6px;
+}
+/*收藏*/
+.m-icons-collection {
+    /* width: 50px;
+    height: 50px */
+    border: 1px solid #ccc;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    color: #999;
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+.m-icons-collection:hover{
+    background-color: #845f3f;
+}
+
+.collect{
+    background-image: url(../img/icon/big-icon.png);
+    width: 30px;
+    height: 30px;
+    background-position: 0 -880px;
+}
+.collect-active{
+    background-image: url(../img/icon/big-icon.png);
+    width: 30px;
+    height: 30px;
+    background-position: 0 -1696;
+}
+
+
+
+/*定制放大镜样式*/
+/* .magnifier{
+    width:90px;
+    overflow:hidden;
+} */
+
+div.big-div>div{
+    float: left; 
+}
+/* 第一个div中的所有图片：一张大图 */
+div.big-div>div:nth-of-type(1)>img{
+    width:350px; height:420px;
+}
+/* 第二个div*/
+div.big-div>div:nth-of-type(2){
+   width: 100px;
+   overflow: hidden;
+   height: 420px;
+  
+}
+/* 第二个div中的所有小图*/
+div.big-div>div:nth-of-type(2)>ul>li>img{
+    width:90px;
+    height:100px; 
+}
+
+div.big-div>div:nth-of-type(2)>ul>li{
+    margin-bottom:5px;
+}
+div.big-div>div:nth-of-type(2)>ul>li>img:hover{
+    border:1px solid rgb(128, 88, 15);
+}
+/* 第二个div下的所有span （一共2个） */
+div.big-div>div:nth-of-type(2)>span{
+    background: url(../img/icon/big-icon.png);
+    position: absolute;
+    display: none;
+    width: 88px;
+    height: 15px;
+    opacity: 0.5;
+}
+/* 第二个div下的第一个span */
+div.big-div>div:nth-of-type(2)>span:nth-of-type(1){
+    top: 0px;
+    background-position: 200px 0;
+}
+/* 第二个div下的第二个span */
+div.big-div>div:nth-of-type(2)>span:nth-of-type(2){
+    bottom:0;
+    background-position:290px 0;
+}
+/* 第二个div上悬停，span的效果 */
+div.big-div>div:nth-of-type(2):hover span{
+    display: inline-block;    
+}
+/* ul的样式 */
+#ul{
+    height: 200px;
+}
+
+
+/* 尺寸选择 */
+.highlight{
+    border:1px solid #845f3f !important; 
+}
+
+/* 左边button：不亮 */
+.btn-left{
+    background: url(../img/icon/big-icon.png);
+    display: inline-block;  
+    width: 30px;
+    height:36px;
+    background-position: 0 -1390px;    
+}
+
+/* 右边button：不亮*/
+.btn-right{
+    background: url(../img/icon/big-icon.png);
+    display: inline-block;  
+    width: 30px;
+    height:36px;
+    background-position: 0 -914px;
+}
+/* 左边和右边button：亮*/
+.left-active{
+    background-position:0 -1356px
+}
+.right-active{
+    background-position:0 -1050px
+}
+
+
+
+
+

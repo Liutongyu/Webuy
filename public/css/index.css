@@ -1,0 +1,322 @@
+
+/*3.导航栏下方：左侧-列表*/
+.list_container{
+    height:400px;
+    width:100%;
+    background:#845f3f;
+    margin-left:0;
+}
+.list_bg:hover{
+    background:#684b34;
+}
+.list_color{
+    color:white;
+    /*text-decoration:none; 用class选择器去掉下划线为什么不可以？？？*/
+}
+#rec,#forfamily,#jydianqi,#elec,#forfamily,#video,#phone,#laptop,#shuma,#clothes,#bag,#canteen,#wine,#sports,#outdoor,#makeup,#child{
+    text-decoration:none;
+    margin-left:20px;
+}
+.list_color:hover{
+    color:#e4af82;
+}
+.list_color:hover{
+    color:#c4a169;
+}
+/*悬浮在list上，出现不同的列表详情的效果*/
+/*列表详情通用格式*/
+.smallimg_size{
+    width:40px;
+    height:40px;
+}
+.detail_padding{
+    padding-right:80px;
+}
+.nav_list{
+    position:relative;
+}
+#youping_detail,#jiajuAndDianqi,#phoneAndVideo,#znjtrzwc,#shuma_detail,#clothesAndebag,#chufang,#health,#xihu{
+    display:none;
+    width:855px;
+    height:402px;
+    border:1px solid gray;
+    background:white;
+    position: absolute;
+    left:286px;
+    top:-25px;
+    overflow: auto;
+}
+/*第一行：有品推荐-鼠标悬停列表*/
+/* 把外层父元素左内边距去掉，给li加左内边距，达到移动文字的效果，同时让li的悬停效果居左 */
+#recommend,#jjrzwc,#videoandlap,#tecAndriza,#shumapj,#clothes_detail,#canteen_detail,#health_detail,#makeup_detail{
+    padding-left:8px ;
+}
+
+#recommend:hover #youping_detail{
+    display:block;
+    z-index:5;
+}
+/*第二行：家居家纺/家用电器-鼠标悬停列表*/
+#jjrzwc:hover #jiajuAndDianqi{
+    display:block;
+    z-index:5;
+}
+/*第三行：手机电脑/电影影音-鼠标悬停列表*/
+#videoandlap:hover #phoneAndVideo{
+    display:block;
+    z-index:5;
+}
+/*第四行：智能家庭/日杂文创-鼠标悬停列表*/
+#tecAndriza:hover #znjtrzwc{
+    display:block;
+    z-index:5;
+}
+/*第五行：数码配件-鼠标悬停列表*/
+#shumapj:hover #shuma_detail{
+    display:block;
+    z-index:5;
+}
+/*第六行：服装配饰/鞋靴箱包-鼠标悬停列表*/
+#clothes_detail:hover #clothesAndebag{
+    display:block;
+    z-index:5;
+}
+/*第七行：餐具厨房/饮食酒水-鼠标悬停列表*/
+#canteen_detail:hover #chufang{
+    display:block;
+    z-index:5;
+}
+/*第八行：运动健康/出行户外-鼠标悬停列表*/
+#health_detail:hover #health{
+    display:block;
+    z-index:5;
+}
+/*第九行：洗护美妆/母婴亲子-鼠标悬停列表*/
+#makeup_detail:hover #xihu{
+    display:block;
+    z-index:5;
+}
+
+
+/*4.主页-大轮播图*/
+.banner>ul>li>a>img{
+    width:100%;
+    height:400px;
+    padding:0;
+}
+.banner>ul{
+    list-style:none;
+    padding:0;
+}
+.tabs{
+    position:absolute;
+    bottom:20px;
+    left:350px;
+}
+.tabs li{
+    width:10px;
+    height:10px;
+    border:2px solid #a7936e;
+    float:left;
+    margin-left:20px;
+    border-radius:100%;
+
+}
+.btn{
+    width:30px;
+    height:50px;
+    background-color:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:30px;
+    line-height:50px;
+    text-align:center;
+    position:absolute;
+    top:50%;
+    margin-top:-25px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color:rgba(0,0,0,.8);
+    color:red;
+}
+.btn1{
+    left:55px;
+}
+.btn2{
+    right:10px;
+}
+.bg{
+    box-shadow: 0 0 0 4px #ccc;
+    background: #a7936e;
+    border-radius: 500px;
+    border: none;
+}
+
+/*设置list和banner下面第一行的图片大小*/
+.img_size{
+    height:144px;
+    width:130px;
+}
+
+/*5.每日新品*/
+.topNewLeft{
+    width:100%;
+    height:408px;
+}
+.topNewMiddle1,.topNewMiddle2{
+    width:100%;
+    height:200px;
+}
+.topNewRight1{
+    width:100%;
+    height:200px;
+}
+.topNewRight2{
+    width:100%;
+    height:200px;
+}
+.topNewRight3{
+    width:100%;
+    height:200px;
+}
+/*!*设置每日新品-每张图的背景颜色（2张背景图除外）*!*/
+.bg_color_one{
+    background-color:#faf0f4;
+}
+.bg_color_two{
+    background-color:#edf8ec;
+}
+.bg_color_three{
+    background-color:#faefeb;
+}
+.bg_color_four{
+    background-color:#f7f5eb;
+}
+.bg_color_five{
+    background-color:#edf1fa;
+}
+ /*设置每日新品的文字位置*/
+.forPosition{
+    position: relative;
+}
+.text1{
+    position:absolute;
+    bottom:300px;
+    left: 20px;
+}
+.text2{
+    position:absolute;
+    bottom:300px;
+    left: 300px;
+}
+.text3{
+    position:absolute;
+    left:580px;
+    bottom:300px;
+}
+.text4{
+    position:absolute;
+    left:300px;
+    bottom:95px;
+}
+.text5{
+    position:absolute;
+    left:577px;
+    bottom:95px;
+}
+#topNewMore{
+    line-height: 205px;
+    font-size: 17px;
+    color: #845f3f;
+    text-decoration:none;
+}
+#topNewMore:hover{color:orange;}
+/*每日新品：图片缩放*/
+.topNewMiddle1:hover{
+    transform:scale(1.2);  /*缩放*/
+    transition: all 0.6s
+}
+.topNewMiddle2:hover{
+    transform:scale(1.2);  /*缩放*/
+    transition: all 0.6s
+}
+.topNewRight1:hover{
+    transform:scale(1.2);  /*缩放*/
+    transition: all 0.6s
+}
+.topNewRight2:hover{
+    transform:scale(1.2);  /*缩放*/
+    transition: all 0.6s
+}
+
+
+
+/*6.热销-小轮播图*/
+.bigbanner{
+    height: 258px;
+    width: 1100px;
+    overflow: hidden;
+    position: relative;
+}
+.banner-hot{
+    width: 3300px;
+    display: flex;
+    justify-content:flex-start;
+    position: absolute;
+    transition: 0.6s;
+}
+#hot1{
+    left: 0;
+}
+#hot2{
+    left: 3300px;
+}
+.banner-hot>ul{
+    list-style:none;
+    padding: 0;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+/* .banner-hot>ul.left{
+margin-left: -1100px;
+} */
+.banner-hot>ul>li>a>img{
+    width:240px;
+    height:240px;
+}
+
+/* .banner-hot>ul:first-child{
+
+} */
+.btnlt{
+    left:20px;
+}
+.btnrt{
+left:1000px;
+}
+
+/*7.居家，影音，服饰，鞋包，饮食类*/
+.forFamily,.video,.clothes,.shoesAndBag,.foods{
+    background-image: url("../img/useForFamily/useforFamily1.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    width:266px;
+    height:337px;
+    text-align:center;
+}
+.forFamily{
+    background-color:rgb(246,207,197);
+}
+.video{
+    background-color:rgb(160,188,241);
+}
+.clothes{
+    background-color:rgb(237,204,217);
+}
+.shoesAndBag{
+    background-color:rgb(209,191,166);
+}
+.foods{
+    background-color:rgb(172,214,206);
+}

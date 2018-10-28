@@ -1,0 +1,94 @@
+/*1.设置引入头部的高宽*/
+.my_header{
+    width:100%;
+    height:100px;
+}
+@media screen and (max-width:991px){
+    .my_header{
+        width:100%;
+        height:14rem;
+    }
+}
+
+.my_nav{
+    width:1200px;
+    height:150px;
+}
+
+.my_footer{
+    width:100%;
+    height:23rem;
+}
+
+@media screen and (max-width: 991px){
+    .my_footer{
+        width:100%;
+        height:37rem;
+        
+    }
+}
+
+/*轮播图左右箭头背景及大小设置*/
+.span_size{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+/*每一个产品类别的间距*/
+.category_magrin{
+    margin-top:140px;
+}
+
+/*每一个分类最右侧的“更多”链接*/
+.more{
+    color:gray;
+}
+.more:hover{
+    color:orange;
+}
+#more_underline1,#more_underline2,#more_underline3,#more_underline4{
+    text-decoration:none;
+}
+
+/*分类左侧小图：两个title 以及右侧的图片大小设置*/
+.toptitle{
+    padding-top:130px;
+}
+.bottomTitle{
+    padding-top:100px;
+    color:white;
+}
+.bottomTitle:hover{
+    color:orange;
+}
+
+.right_img{
+    width:848px;
+    height:337px;
+}
+/*分类：两行小图大小设置*/
+.body_img{
+    height:250px;
+    width:100%;
+}
+
+/*鼠标悬停效果1*/
+.card:hover{
+    position:relative;  /*relative 相对位置 left相对于right ，top相对于bottom */
+    left:2px;  /*往右偏移10px */
+    top:2px;
+}
+
+/*价格颜色*/
+.price_color{
+    color:#c00000;
+}
+.my_small{
+    font-size:0.8rem;
+    color:#999;
+}
+.my_small_withoutColor{
+    font-size:12px;
+}
+
+

@@ -1,0 +1,1476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/meida_check.css">
+    <!-- <script src="./js/jquery.min.js"></script> -->
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Document</title>
+    <style>
+        #btn1,
+        #btn2,
+        #btn3,
+        #btn4 {
+            padding: 0;
+            display: flex;
+            /* 水平居中 */
+            justify-content: center;
+            /* 垂直居中 */
+            align-items: center;
+
+            width: 25px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--1.头部-->
+    <header id="header">
+        <iframe src="header.html" class="my_header" frameborder="0"></iframe>
+    </header>
+    <nav id="nav">
+    </nav>
+    <!--2.主体部分-->
+    <div class="container" style="margin-top:0;">
+        <!-- <h1 align="center"></h1> -->
+        <!--1.导航 -->
+        <!--2.导航栏下方：左侧-列表 -->
+        <div class="row" id="hidden_banner">
+            <div class="list_container col-lg-3 col-md-12 col-sm-12 p-0">
+                <ul class="nav_list list-unstyled mt-4">
+                    <li class="nav-item pb-3 list_bg" id="recommend">
+                        <a href="#" class="list_color" id="rec">weBuy推荐</a>
+                        <!--1.列表：有品推荐detail-->
+                        <div id="youping_detail">
+                            <p class="mt-4 ml-4">weBuy推荐</p>
+                            <ul class="list-unstyled float-left">
+                                <li class="pl-2 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping1.jpg">
+                                    <span class="text-muted">每日上新</span>
+                                </li>
+                                <li class="pl-2 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping5.jpg">
+                                    <span class="text-muted">时令服饰</span>
+                                </li>
+                                <li class="pl-2 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping9.jpg">
+                                    <span class="text-muted">世界风物</span>
+                                </li>
+                            </ul>
+
+                            <ul class="list-unstyled float-left">
+                                <li class="pl-5 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping2.jpg">
+                                    <span class="text-muted">小米自营</span>
+                                </li>
+                                <li class="pl-5 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping6.jpg">
+                                    <span class="text-muted">清凉家居</span>
+                                </li>
+                                <li class="pl-5 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping10.jpg">
+                                    <span class="text-muted">出行颜究</span>
+                                </li>
+                            </ul>
+
+                            <ul class="list-unstyled float-left">
+                                <li class="pl-5 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping3.jpg">
+                                    <span class="text-muted">中秋礼物</span>
+                                </li>
+                                <li class="pl-5 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping7.jpg">
+                                    <span class="text-muted">男士精选</span>
+                                </li>
+                                <li class="pl-5 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping11.jpg">
+                                    <span class="text-muted">人气好评</span>
+                                </li>
+                            </ul>
+
+                            <!-- <ul class="list-unstyled float-left">
+                                <li class="pl-2 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping4.jpg">
+                                    <span class="text-muted">夏季电器</span>
+                                </li>
+                                <li class="pl-2 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping8.jpg">
+                                    <span class="text-muted">女神范儿</span>
+                                </li>
+                                <li class="pl-5 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/youping12.jpg">
+                                    <span>本月推荐</span>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="jjrzwc">
+                        <a href="#" class="list_color" id="forfamily">家居家纺</a>
+                        <span class="text-white">/</span>
+                        <a class="list_color" href="#" id="jydianqi">家用电器</a>
+                        <!--2.家居家纺家用电器detail-->
+                        <div id="jiajuAndDianqi">
+                            <div class="clearfix">
+                                <!--家居家纺-->
+                                <p class="mt-4 ml-4">家居家纺</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju1.jpg">
+                                        <span class="text-muted">夏凉</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju2.jpg">
+                                        <span class="text-muted">被子</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju3.jpg">
+                                        <span class="text-muted">家饰花卉</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju4.jpg">
+                                        <span class="text-muted">床垫</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju5.jpg">
+                                        <span class="text-muted">枕头</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju6.jpg">
+                                        <span class="text-muted">布艺软装</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju7.jpg">
+                                        <span class="text-muted">灯具</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju8.jpg">
+                                        <span class="text-muted">床品件套</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-5 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju9.jpg">
+                                        <span class="text-muted">家具</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju10.jpg">
+                                        <span class="text-muted">家居收纳</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!--家用电器-->
+                                <p class="mt-4 ml-4">家用电器</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju11.jpg">
+                                        <span class="text-muted">生活电器</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju12.jpg">
+                                        <span class="text-muted">空气净化器</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju13.jpg">
+                                        <span class="text-muted">空调/风扇</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju14.jpg">
+                                        <span class="text-muted">新风系统</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju15.jpg">
+                                        <span class="text-muted">洗衣机</span>
+                                    </li>
+                                    <li class="pl-3 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju16.jpg">
+                                        <span class="text-muted">冰箱</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju17.jpg">
+                                        <span class="text-muted">净水器</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/jiaju18.jpg">
+                                        <span class="text-muted">厨房家电</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="videoandlap">
+                        <a class="list_color" href="#" id="elec">手机电脑</a>
+                        <span class="text-white">/</span>
+                        <a class="list_color" href="#" id="video">电影影音</a>
+                        <!--3.手机电脑电影影音detail-->
+                        <div id="phoneAndVideo">
+                            <div class="clearfix">
+                                <!--手机/电脑-->
+                                <p class="mt-4 ml-4">weBuy系列</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone1.jpg">
+                                        <span class="text-muted">weBuy系列</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone2.jpg">
+                                        <span class="text-muted">笔记本12</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone3.jpg">
+                                        <span class="text-muted">鼠标键盘</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone4.jpg">
+                                        <span class="text-muted">红米系列</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone5.jpg">
+                                        <span class="text-muted">笔记本15.6</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone6.jpg">
+                                        <span class="text-muted">转接线/电源</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone7.jpg">
+                                        <span class="text-muted">平板</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone8.jpg">
+                                        <span class="text-muted">笔记本</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone10.jpg">
+                                        <span class="text-muted">游戏本15.6</span>
+                                    </li>
+                                    <!-- <li class="pl-35 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone10.jpg">
+                                        <span class="text-muted">桌面办公</span>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <div class="dianqi_detail">
+                                <!--手机电脑-->
+                                <p class="mt-4 ml-4">手机电脑</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone11.jpg">
+                                        <span class="text-muted">32-40英寸</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone12.jpg">
+                                        <span class="text-muted">65英寸</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone13.jpg">
+                                        <span class="text-muted">43英寸&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone14.jpg">
+                                        <span class="text-muted">盒子</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone15.jpg">
+                                        <span class="text-muted">49-50英寸</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone16.jpg">
+                                        <span class="text-muted">投影</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone17.jpg">
+                                        <span class="text-muted">55英寸</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/phone18.jpg">
+                                        <span class="text-muted">音箱</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="tecAndriza">
+                        <a class="list_color" href="#" id="phone">智能家庭</a>
+                        <span class="text-white">/</span>
+                        <a class="list_color" href="#" id="laptop">日杂文创</a>
+                        <!--4.智能家庭日杂文创-detail-->
+                        <div id="znjtrzwc">
+                            <div class="clearfix">
+                                <!--智能家庭-->
+                                <p class="mt-4 ml-4">智能家庭</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt1.jpg">
+                                        <span class="text-muted">安防</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt2.jpg">
+                                        <span class="text-muted">酷玩</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt3.jpg">
+                                        <span class="text-muted">网关/传感器</span>
+                                    </li>
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt4.jpg">
+                                        <span class="text-muted">相机</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt5.jpg">
+                                        <span class="text-muted">路由器</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt6.jpg">
+                                        <span class="text-muted">穿戴</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!--日杂文创-->
+                                <p class="mt-4 ml-4">日杂文创</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt7.jpg">
+                                        <span class="text-muted">日用</span>
+                                    </li>
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt8.jpg">
+                                        <span class="text-muted">宠物</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt9.jpg">
+                                        <span class="text-muted">文具&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; </span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt10.jpg">
+                                        <span class="text-muted">工具</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/znjt11.jpg">
+                                        <span class="text-muted">清洁</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="shumapj">
+                        <a class="list_color" href="#" id="shuma">数码配件</a>
+                        <div id="shuma_detail">
+                            <!--数码配件-->
+                            <p class="mt-4 ml-4">数码配件</p>
+                            <ul class="list-unstyled float-left">
+                                <li class="pl-2 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/shuma1.jpg">
+                                    <span>办公周边</span>
+                                </li>
+                                <li class="pl-2 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/shuma2.jpg">
+                                    <span>适配器线材</span>
+                                </li>
+                            </ul>
+
+                            <ul class="list-unstyled float-left">
+                                <li class="pl-3 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/shuma3.jpg">
+                                    <span class="text-muted">手机周边</span>
+                                </li>
+                                <li class="pl-3 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/shuma4.jpg">
+                                    <span class="text-muted">插线板</span>
+                                </li>
+                            </ul>
+
+                            <ul class="list-unstyled float-left">
+                                <li class="pl-3 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/shuma5.jpg">
+                                    <span class="text-muted">耳机</span>
+                                </li>
+                                <li class="pl-3 pb-5 detail_padding" onclick='window.open("login.html")' style="cursor: pointer;">
+                                    <img class="smallimg_size" src="./img/firstline_list_det/shuma6.jpg">
+                                    <span class="text-muted">电竞</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="clothes_detail">
+                        <a class="list_color" href="#" id="clothes">服装配饰</a>
+                        <span class="text-white">/</span>
+                        <a class="list_color" href="#" id="bag">鞋靴箱包</a>
+                        <!--服装配饰鞋靴箱包-->
+                        <div id="clothesAndebag">
+                            <div class="clearfix">
+                                <!--服装配饰-->
+                                <p class="mt-4 ml-4">服装配饰</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/clothes1.jpg">
+                                        <span class="text-muted">T恤</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/clothes2.jpg">
+                                        <span class="text-muted">裤装</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/clothes3.jpg">
+                                        <span class="text-muted">衬衫</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dianqi_detail">
+                                <!--鞋靴箱包-->
+                                <p class="mt-4 ml-4">鞋靴箱包</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/clothes4.png">
+                                        <span class="text-muted">男鞋</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/clothes5.jpg">
+                                        <span class="text-muted">女鞋</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/clothes6.jpg">
+                                        <span class="text-muted">卡包</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="canteen_detail">
+                        <a class="list_color" href="#" id="canteen">餐具厨房</a>
+                        <span class="text-white">/</span>
+                        <a class="list_color" href="#" id="wine">饮食酒水</a>
+                        <!--餐具厨房/饮食酒水-->
+                        <div id="chufang">
+                            <div class="clearfix">
+                                <p class="mt-4 ml-4">餐具厨房</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/canteen1.jpg">
+                                        <span class="text-muted">厨房电器</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/canteen2.jpg">
+                                        <span class="text-muted">茶咖酒具</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/canteen3.jpg">
+                                        <span class="text-muted">保鲜收纳</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!--饮食酒水-->
+                                <p class="mt-4 ml-4">饮食酒水</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/cantten4.png">
+                                        <span class="text-muted">方便食品</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/canteen5.png">
+                                        <span class="text-muted">冲饮调料</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/canteen6.jpg">
+                                        <span class="text-muted">粮油调味</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="health_detail">
+                        <a class="list_color" href="#" id="sports">运动健康</a>
+                        <span class="text-white">/</span>
+                        <a class="list_color" href="#" id="outdoor">出行户外</a>
+                        <!--运动健康/出行户外-->
+                        <div id="health">
+                            <div class="clearfix">
+                                <!--运动健康-->
+                                <p class="mt-4 ml-4">运动健康</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/health1.jpg">
+                                        <span class="text-muted">康体监护</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/health2.jpg">
+                                        <span class="text-muted">康体监护</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/health3.jpg">
+                                        <span class="text-muted">运动健身</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/health4.png">
+                                        <span class="text-muted">泳衣泳具</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dianqi_detail">
+                                <!--出行户外-->
+                                <p class="mt-4 ml-4">出行户外</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pr-5 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/health5.jpg">
+                                        <span class="text-muted">汽车用品</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/health6.jpg">
+                                        <span class="text-muted">户外</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-3 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/health7.jpg">
+                                        <span class="text-muted">骑行</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item pb-3 list_bg" id="makeup_detail">
+                        <a class="list_color" href="#" id="makeup">洗护美妆</a>
+                        <span class="text-white">/</span>
+                        <a class="list_color" href="#" id="child">母婴亲子</a>
+                        <!--洗护美妆/母婴亲子-->
+                        <div id="xihu">
+                            <div class="clearfix">
+                                <!--洗护美妆-->
+                                <p class="mt-4 ml-4">洗护美妆</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/makeup1.png">
+                                        <span class="text-muted">彩妆香氛</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/makeup2.jpg">
+                                        <span class="text-muted">洗护工具</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-5 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/makeup3.jpg">
+                                        <span class="text-muted">毛巾浴巾</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <!--母婴亲子-->
+                                <p class="mt-4 ml-4">母婴亲子</p>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-2 pr-5 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/makeup4.jpg">
+                                        <span class="text-muted">儿童穿戴</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-5 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/makeup5.jpg">
+                                        <span class="text-muted">婴童服饰</span>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled float-left">
+                                    <li class="pl-5 pb-5 detail_padding">
+                                        <img class="smallimg_size" src="./img/firstline_list_det/makeup6.jpg">
+                                        <span class="text-muted">童鞋童包</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--2.导航栏下方：右侧轮播图-->
+            <div class="col-lg-9 col-md-12 col-sm-12 p-0 pl-1" id="large_banner">
+                <div onmouseenter="stopchange()" class="banner" onmouseleave="startchange()">
+                    <ul class="img">
+                        <li class="picImg"><a href="#"><img src="img/banner/1.jpg"></a></li>
+                        <li class="picImg"><a href="#"><img src="img/banner/2.jpg"></a></li>
+                        <li class="picImg"><a href="#"><img src="img/banner/3.jpg"></a></li>
+                        <li class="picImg"><a href="#"><img src="img/banner/4.jpg"></a></li>
+                        <li class="picImg"><a href="#"><img src="img/banner/add5.jpg"></a></li>
+                    </ul>
+
+                    <ul class="tabs">
+                        <li class="bg"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="btn btn1" id="btn1"><span>&lt;</span></div>
+                    <div class="btn btn2" id="btn2"><span>&gt;</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!--3.列表和轮播图下面：第一行图片-->
+        <div class="row mt-4">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="list-unstyled d-flex justify-content-between">
+                    <li>
+                        <a href="#"><img class="img_size" src="./img/firstline_underList/1.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img_size" src="./img/firstline_underList/2.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img_size" src="./img/firstline_underList/3.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img_size" src="./img/firstline_underList/4.jpg"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img class="img_size" src="./img/firstline_underList/5.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--分隔线-->
+        <div class="border-top"></div>
+
+        <!--4.每日新品-->
+        <div class="category_margin mb-5 category_magrin">
+            <h3 class="d-inline mr-2">每日新品</h3>
+            <h6 class="d-inline text-muted">每一件产品给您不一样的感动</h6>
+            <a href="#" class="d-inline float-right more" id="more_underline1">更多</a>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+            <div class="row forPosition">
+                <div class="col-3 p-0" id="topNew-first">
+                    <!--<div onclick='window.open("login.html")' style="cursor: pointer;">
+                    <img class="topNewLeft" src="./img/topNewProducts/1.jpg">
+                    <div class="text1">
+                        <h5>90分智能解锁旅行箱</h5>
+                        <h6 class="text-muted">指纹识别，时尚色彩，便携登机</h6>
+                        <h6 class="price_color">￥999</h6>
+                    </div>
+                </div> -->
+                </div>
+
+                <div class="col-3 p-0 pl-2" id="two-pics">
+                    <!-- <div class="bg_color_one" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <img class="topNewMiddle1" src="./img/topNewProducts/2.png">
+                   </div>
+                   <div class="pt-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                       <div class="bg_color_two">
+                       <img class="topNewMiddle2" src="./img/topNewProducts/3.png">
+                       </div>
+                   </div> -->
+                </div>
+
+                <div class="col-6 p-0 pl-2">
+                    <div id="other-two-pic">
+                        <!-- <div class="bg_color_three" onclick='window.open("login.html")' style="cursor: pointer;">
+                                <img class="topNewRight1" src="./img/topNewProducts/5.png">
+                       </div> -->
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 pr-0" id="fourth-pic">
+                            <!-- <div class="pt-2">
+                               <div class="bg_color_four" onclick='window.open("login.html")' style="cursor: pointer;">
+                                  <img class="topNewRight2" src="./img/topNewProducts/4.png">
+                               </div>
+                           </div> -->
+                        </div>
+                        <div class="col-6 pl-2 pt-2">
+                            <div class="topNewRight3 bg_color_five p-0 text-center">
+                                <a id="topNewMore" href="#">更多新品>></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="text2">
+                    <h5>莱克吉米除螨吸尘器</h5>
+                    <h6 class="text-muted">远离螨虫伤害，守护您的健康</h6>
+                    <h6 class="price_color">￥299</h6>
+                </div>
+                <div class="text3">
+                    <h5>新式月饼礼盒（8枚装）</h5>
+                    <h6 class="text-muted">利用现代技术科学烘培，确保达到食物最好的口感</h6>
+                    <h6 class="price_color">￥149</h6>
+                </div>
+                <div class="text4">
+                    <h5>巧克力中秋礼盒</h5>
+                    <h6 class="text-muted">（浓情）255g/盒</h6>
+                    <h6 class="price_color">￥198</h6>
+                </div>
+                <div class="text5">
+                    <h5>红钻 软籽石榴</h5>
+                    <h6 class="text-muted">中果5斤9粒分享装</h6>
+                    <h6 class="price_color">￥99</h6>
+                </div>
+            </div>
+        </div>
+
+        <!--5.热门-->
+        <div class="category_magrin mb-5 clearfix">
+            <h3 class="d-inline mr-2">热门</h3>
+            <h6 class="d-inline text-muted">大家都爱的贴心好物</h6>
+            <a href="#" class="d-inline float-right more" id="more_underline2">更多</a>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 mt-5 border mr-5 mb-5">
+            <!--小轮播图片-->
+            <div onmouseenter="stop()" class="bigbanner clearfix" onmouseleave="start()">
+                <div id="hot1" class="banner-hot">
+                    <ul class="clearfix hot-firstul">
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/5.jpg"></a></li>
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/6.jpg"></a></li>
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/7.jpg"></a></li>
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/8.jpg"></a></li>
+                    </ul>
+                    <ul class="clearfix hot-secondul">
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/9.jpg"></a></li>
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/10.jpg"></a></li>
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/11.jpg"></a></li>
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/12.jpg"></a></li>
+                    </ul>
+                    <ul class="clearfix hot-third">
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/13.jpg"></a></li>
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/14.jpg"></a></li>
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/13.jpg"></a></li>
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/14.jpg"></a></li>
+                    </ul>
+                </div>
+                <div id="hot2" class="banner-hot">
+                    <ul class="clearfix hot-firstul">
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/5.jpg"></a></li>
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/6.jpg"></a></li>
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/7.jpg"></a></li>
+                        <li class="hotImg float-left"><a href=""><img src="./img/banner/8.jpg"></a></li>
+                    </ul>
+                    <ul class="clearfix hot-secondul">
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/9.jpg"></a></li>
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/10.jpg"></a></li>
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/11.jpg"></a></li>
+                        <li class="hotImg2 float-left"><a href=""><img src="./img/banner/12.jpg"></a></li>
+                    </ul>
+                    <ul class="clearfix hot-third">
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/13.jpg"></a></li>
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/14.jpg"></a></li>
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/13.jpg"></a></li>
+                        <li class="hotImg3 float-left"><a href=""><img src="./img/banner/14.jpg"></a></li>
+                    </ul>
+                </div>
+                <div class="btn btnlt" id="btn3">&lt;</div>
+                <div class="btn btnrt" id="btn4">&gt;</div>
+            </div>
+
+        </div>
+
+
+        <!--6.居家-->
+        <div class="category_magrin mb-5 clearfix">
+            <h3 class="d-inline mr-2">品牌</h3>
+            <h6 class="d-inline text-muted">精心制作 价美质优</h6>
+            <a href="#" class="d-inline float-right more" id="more_underline3">更多</a>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+            <div class="row" id="jujia">
+                <!-- <div class="col-3 forFamily p-0">
+                    <h2 class="toptitle font-weight-bold text-white">居家</h2>
+                    <a href="#" style="text-decoration:none"><h6 class="bottomTitle">更多>></h6></a>
+               </div>
+                <div class="col-6 p-0 ml-2">
+                    <a href="#"><img class="right_img" src="./img/useForFamily/2.jpg"></a>
+                </div> -->
+            </div>
+            <!--第一行 -->
+            <div class="row mt-2" id="jujia-first-detail">
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/3.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">大小尺寸960 x 640m </p>
+                                <p class="font-weight-bold"> Yeelight皓石LED</p>
+                                <p class="price_color">￥1099</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/4.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">20cm厚度 </p>
+                                <p class="font-weight-bold">8H乳胶弹簧静音床垫M3</p>
+                                <p class="price_color">￥1599</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/5.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">全身按摩，模拟零重力</p>
+                                <p class="font-weight-bold">摩摩哒智能休闲按摩椅</p>
+                                <p class="price_color">￥4599</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/6.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">一键轻松组合，多层次柔软坐感</p>
+                                <p class="font-weight-bold">8H魔方布艺L型组合沙发</p>
+                                <p class="price_color">￥699</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第二行-->
+            <div class="row mt-2" id="jujia-second-detail">
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/7.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">泰国纯天然乳胶，新一代发泡工艺</p>
+                                <p class="font-weight-bold">8H七分区天然乳胶床垫R1</p>
+                                <p class="price_color">￥1099</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/8.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">黑胡桃原木，悬浮式设计</p>
+                                <p class="font-weight-bold">铜师傅安格尔黑胡桃原木餐桌椅</p>
+                                <p class="price_color">￥299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/9.png" alt="">
+                            <div class="card-footer">
+                                <p class="text-muted">简约百搭，高低错落</p>
+                                <p class="font-weight-bold">样子拼图茶几组合三件套</p>
+                                <p class="price_color">￥599</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/useForFamily/10.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">100%厚切头层牛皮，经久耐用</p>
+                                <p class="font-weight-bold">头层水牛皮席三件套</p>
+                                <p class="price_color">￥2249</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--7.影音-->
+        <div class="col-lg-12 col-md-12 col-sm-12 p-0 mt-5">
+            <div class="row" id="film-video">
+                <!-- <div class="col-3 video p-0">
+                <h2 class="toptitle font-weight-bold text-white">影音</h2>
+                <a href="#" style="text-decoration:none"><h6 class="bottomTitle">更多>></h6></a>
+            </div>
+            <div class="col-6 p-0 ml-2">
+                <a href="#"><img class="right_img" src="./img/video/2.jpg" alt=""></a>
+            </div> -->
+            </div>
+            <!-- 第一行 -->
+            <div class="row mt-2" id="video-first-detail">
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/3.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">卧室首选/轻至4kg</p>
+                                <p class="font-weight-bold">小米电视4A 32英寸 黑色</p>
+                                <p class="price_color">￥899</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/4.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">蓝牙语音遥控/海量片源 </p>
+                                <p class="font-weight-bold">小米电视4A 43英寸青春版</p>
+                                <p class="price_color">￥1399</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/5.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">4K HDR/钢琴烤漆</p>
+                                <p class="font-weight-bold">小米电视4C 50英寸</p>
+                                <p class="price_color">￥1899</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/6.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">超窄边钢琴烤漆</p>
+                                <p class="font-weight-bold">小米电视4C 55英寸</p>
+                                <p class="price_color">￥699</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第二行-->
+            <div class="row mt-2" id="video-second-detail">
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/7.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">4.9mm超薄/超窄框设计</p>
+                                <p class="font-weight-bold">小米电视4 55英寸</p>
+                                <p class="price_color">￥3699</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/8.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">金色超窄边框/4K超高清</p>
+                                <p class="font-weight-bold">小米电视4C 55英寸</p>
+                                <p class="price_color">￥299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/9.png" alt="">
+                            <div class="card-footer">
+                                <p class="text-muted">4K HDR/超窄边</p>
+                                <p class="font-weight-bold">小米电视4X 55英寸</p>
+                                <p class="price_color">￥2299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/video/10.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">我是推荐/人工智能系统</p>
+                                <p class="font-weight-bold">小米电视4C 32英寸</p>
+                                <p class="price_color">￥899</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--8.服饰-->
+        <div class="col-lg-12 col-md-12 col-sm-12 p-0 mt-5">
+            <div class="row" id="dress">
+                <!-- <div class="col-3 clothes p-0">
+                <h2 class="toptitle font-weight-bold text-white">服饰</h2>
+                <a href="#" style="text-decoration:none"><h6 class="bottomTitle">更多>></h6></a>
+            </div>
+            <div class="col-6 p-0 ml-2">
+                <a href="#"><img class="right_img" src="./img/clothes/1.clohtes_bg.jpg" alt=""></a>
+            </div> -->
+            </div>
+            <!-- 第一行 -->
+            <div class="row mt-2" id="clothes-first-detail">
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/2.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">进口氨纶，X型收腹</p>
+                                <p class="font-weight-bold">悠启100D经典平纹连裤袜</p>
+                                <p class="price_color">￥49</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/3.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">科技面料，特殊拼接 </p>
+                                <p class="font-weight-bold">Uleemark运动圆领长袖T恤男款</p>
+                                <p class="price_color">￥99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/4.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">加厚毛圈，防护耐磨</p>
+                                <p class="font-weight-bold">悍将COOLMAX毛圈运动袜</p>
+                                <p class="price_color">￥49</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/5.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">吸湿排汗，抑菌透气</p>
+                                <p class="font-weight-bold">悍将轻运动袜系列</p>
+                                <p class="price_color">￥39</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第二行-->
+            <div class="row mt-2" id="clothes-second-detail">
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/6.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">抗菌健康，柔软舒适</p>
+                                <p class="font-weight-bold">悠启真我吊带文胸</p>
+                                <p class="price_color">￥49</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/7.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">极简设计奢牌同源</p>
+                                <p class="font-weight-bold">一箭倾心 K金钻石项链手链</p>
+                                <p class="price_color">￥989</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/8.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">珍贵真丝，轻奢套装</p>
+                                <p class="font-weight-bold">instant me 100%真丝吊带套装</p>
+                                <p class="price_color">￥399</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/clothes/9.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">真丝吊带，裙睡袍套装</p>
+                                <p class="font-weight-bold">instant me 100%真丝吊带套装</p>
+                                <p class="price_color">￥899</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--9.鞋包-->
+        <div class="col-lg-12 col-md-12 col-sm-12 p-0 mt-5">
+            <div class="row" id="bags">
+                <!-- <div class="col-3 shoesAndBag p-0">
+                <h2 class="toptitle font-weight-bold text-white">鞋包</h2>
+                <a href="#" style="text-decoration:none"><h6 class="bottomTitle">更多>></h6></a>
+            </div>
+            <div class="col-6 p-0 ml-2">
+                <a href="#"><img class="right_img" src="./img/shoesAndBag/1.shoes_bg.jpg"></a>
+            </div> -->
+            </div>
+            <!--第一行-->
+            <div class="row mt-2" id="shoes-first-detail">
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/shoesAndBag/2.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">坚韧结实，4级防泼水</p>
+                                <p class="font-weight-bold">悠启活力学院休闲双肩包</p>
+                                <p class="price_color">￥169</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/shoesAndBag/3.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">头层水牛皮，耐磨不易折 </p>
+                                <p class="font-weight-bold">七面头层牛皮轻弹休闲鞋</p>
+                                <p class="price_color">￥289</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/shoesAndBag/4.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">静音耐磨方向轮</p>
+                                <p class="font-weight-bold">90分七道杠旅行箱</p>
+                                <p class="price_color">￥349</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img class="body_img" src="./img/shoesAndBag/5.png" alt="">
+                            <div class="card-footer text-center">
+                                <p class="text-muted">手工缝线，舒适百搭</p>
+                                <p class="font-weight-bold">七面头层牛皮帆船休闲鞋</p>
+                                <p class="price_color">￥339</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第二行-->
+            <div class="row mt-2" id="shoes-second-detail">
+                <div class="row mt-2" id="">
+                    <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/shoesAndBag/6.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">拒水涂层，400D面料抗撕裂</p>
+                                    <p class="font-weight-bold">90分全天候机能背包</p>
+                                    <p class="price_color">￥199</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/shoesAndBag/7.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">硬朗军靴风格</p>
+                                    <p class="font-weight-bold">七面新经典头层牛皮工装靴</p>
+                                    <p class="price_color">￥399</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/shoesAndBag/8.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">4级防泼水，10L容量，轻盈背负</p>
+                                    <p class="font-weight-bold">小米炫彩小背包</p>
+                                    <p class="price_color">￥29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/shoesAndBag/9.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">Uni-Moulding一体成型工艺</p>
+                                    <p class="font-weight-bold">米家运动鞋2</p>
+                                    <p class="price_color">￥199</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--10.饮食-->
+            <div class="col-lg-12 col-md-12 col-sm-12 p-0 mt-5">
+                <div class="row" id="eat">
+                    <!-- <div class="col-3 foods p-0">
+                <h2 class="toptitle font-weight-bold text-white">饮食</h2>
+                <a href="#" style="text-decoration:none"><h6 class="bottomTitle">更多>></h6></a>
+            </div>
+            <div class="col-6 p-0 ml-2">
+                <a href="#"><img class="right_img" src="./img/foods/1.eat_bg.jpg" alt=""></a>
+            </div> -->
+                </div>
+                <!--第一行-->
+                <div class="row mt-2" id="foods-first-detail">
+                    <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/2.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">日式桃山皮，四位创新馅料</p>
+                                    <p class="font-weight-bold">双珏熠辉月饼礼盒</p>
+                                    <p class="price_color">￥149</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/3.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">出口品质，生态养殖</p>
+                                    <p class="font-weight-bold">阳澄湖大闸蟹礼券</p>
+                                    <p class="price_color">￥258</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/4.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">肉香味浓，专业排酸</p>
+                                    <p class="font-weight-bold">阿根廷整肉原切牛肉块 8斤装</p>
+                                    <p class="price_color">￥199</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/5.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">进口巧克力，不含代可可脂</p>
+                                    <p class="font-weight-bold">巧克力中秋礼盒</p>
+                                    <p class="price_color">￥198</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第二行-->
+                <div class="row mt-2" id="foods-second-detail">
+                    <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/6.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">冰爽香甜，颗粒饱满</p>
+                                    <p class="font-weight-bold">冰栗500g*2袋/组</p>
+                                    <p class="price_color">￥68</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 p-0 pl-2 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/7.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">健康底因，香味出众</p>
+                                    <p class="font-weight-bold">和言美式低因挂耳咖啡 10包装</p>
+                                    <p class="price_color">￥49</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 p-0 pr-2" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/8.png" alt="">
+                                <div class="card-footer">
+                                    <p class="text-muted">营养便携，泡发简单</p>
+                                    <p class="font-weight-bold">一支好参（干海参速发型）</p>
+                                    <p class="price_color">￥312.8</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0" onclick='window.open("login.html")' style="cursor: pointer;">
+                        <div class="card">
+                            <div class="card-body p-0">
+                                <img class="body_img" src="./img/foods/9.png" alt="">
+                                <div class="card-footer text-center">
+                                    <p class="text-muted">绍兴核心产区，传统工艺酿造</p>
+                                    <p class="font-weight-bold">醉进九黄酒经典4口味礼盒装</p>
+                                    <p class="price_color">￥189</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="card col-3 card_size mr-2">-->
+            <!--<div class="card-body p-0">-->
+            <!--<img class="body_img" src="./img/useForFamily/4.png" alt="">-->
+            <!--<div class="card-footer"><p>大小尺寸</p></div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="card col-3 card_size">-->
+            <!--<div class="card-body p-0">-->
+            <!--<img class="body_img" src="./img/useForFamily/5.png" alt="">-->
+            <!--<div class="card-footer"><p>大小尺寸</p></div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="card col-3 card_size">-->
+            <!--<div class="card-body p-0">-->
+            <!--<img class="body_img" src="./img/useForFamily/6.png" alt="">-->
+            <!--<div class="card-footer"><p>大小尺寸</p></div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+        </div>
+    </div>
+    <!--3.尾部-->
+    <footer>
+        <iframe src="footer.html" class="my_footer" frameborder="0"></iframe>
+    </footer>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/homePageLunbo.js"></script>
+    <script src="./js/hotProductsLunbo.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

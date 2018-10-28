@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.haha{
+    width:100%;
+    background:gray;
+}
+.container2{
+    width: 1180px;
+    height:100%;
+    margin:  0 auto;
+    /* overflow:hidden */
+   justify-content: space-around;
+
+}
+.prodetails{
+    width: 1180px;
+}
+.eachProduct{
+ width:270px;
+ height:270px;
+ background:white;
+ /* float: left; */
+ margin: 10px;
+ display: inline-block;
+ box-shadow:3px 3px 3px #0c5460;
+ text-align: center;
+}
+
+.eachProduct>img{
+    width:200px;
+    height:200px;
+    margin-top:10px;
+}
+
+.eachProduct>:nth-child(2){
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.eachProduct>:nth-child(3){
+    font-size: 16px;
+    color:red;
+}

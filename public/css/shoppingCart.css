@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#conta{
+    width: 1180px;
+    margin:  0 auto
+}
+/* 清除浮动 clearfix */
+div.product1{
+    overflow: hidden;
+}
+div.product1 ul{
+    overflow: hidden;
+}
+ul.shopping-details li>div>img{
+    height:120px;
+    width:120px;
+}
+
+
+/* 首行背景颜色 字体颜色 高度等 */
+.shoppingCart{
+    height: 42px;
+    line-height: 40px;
+    background-color: #fafafa;
+    color: #999;
+    margin-bottom:50px;
+    box-shadow: 0 -3px 10px #eee;
+}
+.shoppingCartHeader >li{
+    list-style:none;
+    float: left;
+    font-size: 20px;
+}
+
+/* 点击全选之前的状态图：不变红 */
+.pick,.pick2{
+    background: url(../img/icon/big-icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: 0 -490px;
+    margin-top:12px;
+    margin-left:5px;
+
+}
+
+/* 点击全选之后的状态图：变红*/
+div.icon{
+    background-position: 0 -402px;;
+}
+
+/* 调整首行边距 */
+.shoppingCartHeader{
+    display: flex;
+    align-items: center;
+}
+.shoppingCartHeader>li:nth-child(1){
+    width: 40px;
+}
+.shoppingCartHeader>li:nth-child(2){
+    width: 200px;
+}
+.shoppingCartHeader>li:nth-child(3){
+    width: 350px;
+}
+.shoppingCartHeader>li:nth-child(4){
+    width: 350px;
+}
+.shoppingCartHeader>li:nth-child(5){
+    width: 200px;
+}
+.shoppingCartHeader>li:nth-child(6){
+    width: 200px;
+}
+.shoppingCartHeader>li:nth-child(7){
+    width: 80px;
+}
+
+/* -------------------------------------------------- */
+/* 下面的购物详细CSS */
+.shopping-detail{
+    margin-top:150px;
+}
+
+/* 设置订单详情的 最左边的图标大小 */
+.shopping-details>li:first-child>div>img{
+    width: 120px;
+    height: 120px;
+}
+
+/* 最后一个：删除按钮：X */
+.shopping-details li:last-child>div{
+    background: url(../img/icon/big-icon.png);
+    width: 13px;
+    height: 13px;
+    background-position: 0 -119px;
+}
+/* 删除符号：变亮 */
+.shopping-details li:last-child>div:hover{
+    background-position: 0 -102px;
+}
+
+/* 调整订单详情边距 */
+/* 先设置浮动 */
+.shopping-details>li{
+    float: left;
+    list-style:none;
+}
+
+
+/* 加减button */
+/* 左边button：不亮 */
+.btn-left{
+    background: url(../img/icon/big-icon.png);
+    display: inline-block;  
+    width: 30px;
+    height:36px;
+    background-position: 0 -1356px;    
+}
+
+/* 左边button亮*/
+.left-active{
+    background-position: 0 -1356px;
+}
+
+/* 右边button：常亮*/
+.btn-right{
+    background: url(../img/icon/big-icon.png);
+    display: inline-block;  
+    width: 30px;
+    height:36px;
+    background-position:0 -1050px
+}
+
+/*结算页面 -------------------------------------------------- */
+.calculate{
+    height: 100px;
+    line-height: 40px;
+    background-color: #fafafa;
+    color: #999;
+    margin-bottom:50px;
+    margin-top:500px;
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0 -3px 10px #eee;
+    box-shadow: 0 -3px 10px #eee;
+}
+
+.calculate >ul{
+    list-style:none;
+}
+.calculate >ul>li{
+    float: left;
+    font-size:25px;
+    color:black;
+}
+/* 价格颜色 */
+.calculate>ul>li:nth-child(5)>div{
+    color: #a9010d;
+}
+
+/* 结算按钮 */
+.checkout{
+    float: right;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #a9010d;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* 全选按钮  没有全选的状态*/
+.calculate>ul>li:first-child{
+    background: url(../img/icon/big-icon.png);
+    width: 20px;
+    height: 20px;
+    background-position: 0 -490px;
+    margin-top:12px;
+    margin-left:5px;
+}
+
+/* 调整左右间距 */
+.calculate>ul>li:nth-child(2){
+    margin-left:10px;
+}
+.calculate>ul>li:nth-child(3){
+    margin-left:20px;
+}
+.calculate>ul>li:nth-child(4){
+    margin-left:550px;
+}
+.calculate>ul>li:nth-child(5){
+    margin-left:10px;
+    margin-right:10px;
+}
+.calculate>ul>li:last-child{
+    float: right;
+}

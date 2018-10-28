@@ -1,0 +1,129 @@
+/*大的div*/
+.container1{
+    width:100%;
+    height:750px;
+    margin-top:10px;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-image:url(../img/login/1.png);
+    position:relative;
+    border-radius:5px;
+    padding-top: 90px;
+}
+div.tab-pane{
+    width:350px;
+    height:380px;
+    background-color:rgba(160, 203, 229, 0.63);
+    margin:0 auto; 
+    border-radius:5px;
+    box-shadow:3px 3px 3px #0c5460;
+    border: 1px solid transparent;
+}
+
+div.tab-pane table{
+    width:100%;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+background-color:#4bc9fc;
+}
+
+
+
+/*用户名和密码框*/
+.txt{
+    width:250px;
+    height:35px;
+    border:0;
+    padding:0;
+    outline:0;
+    margin-bottom:40px;
+    padding-left:15px;
+    box-sizing:border-box; /*使用box-sizing，避免使用padding-left之后的溢出*/
+}
+
+/* 注册框 */
+.txt2{
+    width:250px;
+    height:35px;
+    border:0;
+    padding:0;
+    outline:0;
+    margin-bottom:10px;
+    padding-left:10px;
+    box-sizing:border-box; /*使用box-sizing，避免使用padding-left之后的溢出*/
+}
+
+
+/*用户名和密码框*/
+::placeholder{
+    color:gray;
+    font-size:13px;
+}
+
+.rememberMe,.forgetUpwd{
+    color:black;
+    font-size:15px;
+    text-decoration:none;
+    padding-left:48px;  /*????*/
+}
+
+.login,#ureg{ 
+    width:250px;
+    height:35px;
+    background-image:linear-gradient(to bottom ,#27b0f6, #76e0ff);
+    border:0; /*取消登陆栏的自带的边框*/
+    margin-top:15px;
+    color:#fff;
+}
+
+.center{text-align:center;}
+
+.register{
+    text-decoration:none;
+    color:black;
+    padding-left:230px;
+}
+.nav-pills{
+    width:350px;
+    height:40px;
+    background: #5cd0fc;
+    margin: 0 auto;
+}
+
+.nav-pills li{
+    width:175px;
+    text-align:center;
+}
+
+#nav_login{
+    background:#3684a39a;
+}
+
+
+/* 页面初始，验证消息不显示 */
+.vali_info{
+	display:none;
+}
+.text_focus{
+    border:2px solid black; 
+}
+
+.span_none{
+   display:none;
+}
+.span_blur{
+   display:none;
+}
+
+/* 判断注册的用户名，密码和邮箱*/
+.judgeUname,.judgeUpwd,.judgeEmail{
+    font-size:14px;
+    color:gray;
+    padding-bottom:20px;
+    padding-left:60px;
+}
+
+.unvisible{
+    visibility: hidden;
+}
+
